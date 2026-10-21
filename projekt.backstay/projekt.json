@@ -1,0 +1,55 @@
+{
+  "$types": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$main": true,
+    "title": "Projekt",
+    "description": "EinDateiModul S4 (2026-10-08): die WURZEL des Bundles — das Projekt mit 0..n Dokumenten. Ausgegliederte Felder nennt `$files` (hier das Dokument), alles andere liegt inline: die Notizen als Collection vom Typ Notiz direkt in dieser Datei.",
+    "$import": "backstay:notizen",
+    "type": "object",
+    "$titleField": "title",
+    "required": [
+      "title"
+    ],
+    "properties": {
+      "title": {
+        "title": "Titel",
+        "type": "string"
+      },
+      "notizen": {
+        "$ref": "#/$defs/Notizen"
+      }
+    },
+    "$defs": {
+      "Notizen": {
+        "title": "Notizen",
+        "description": "Die Notizen des Projekts — eine Collection vom Typ Notiz, inline in der Wurzel. Ausgliedern hieße: ein Eintrag in `$files`.",
+        "type": "object",
+        "$entryType": "#/$defs/Notiz",
+        "properties": {
+          "idee": {
+            "$ref": "#/$defs/Notiz",
+            "properties": {
+              "absatz": {
+                "$ref": "#/$defs/Paragraph"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Mein Projekt",
+  "notizen": {
+    "idee": {
+      "title": "Idee",
+      "getauft": "2026-10-08T18:00:00.000Z",
+      "autor": "Lena Musterfrau",
+      "absatz": {
+        "content": "Die Notizen wohnen in der Wurzel, das Dokument in seiner eigenen Datei."
+      }
+    }
+  },
+  "dokument": {
+    "$file": "dokument.json"
+  }
+}

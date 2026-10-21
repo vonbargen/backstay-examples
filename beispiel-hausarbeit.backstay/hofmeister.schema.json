@@ -1,0 +1,538 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$main": true,
+  "title": "Der Hofmeister (benannt)",
+  "description": "Vergleichs-Zwilling der Beispielarbeit (Findung 2026-08-26, offen): dieselbe Arbeit, aber OHNE Absatz-Arrays — jeder Prosa-Absatz ist ein einzeln benanntes Feld vom Typ Paragraph (Kardinalität 1). Das Original examples/beispiel-hausarbeit.backstay modelliert Prosa als Lauf (Absatz [0..*]); beide Formen deutet das Erkennungs-Quartett als Prose. Zum Vergleich der Modellierungen nebeneinander öffnen.",
+  "$import": "backstay:document",
+  "$ref": "#/$defs/Chapter",
+  "required": [
+    "title"
+  ],
+  "properties": {
+    "introduction": {
+      "$ref": "#/$defs/Introduction"
+    },
+    "foundations": {
+      "$ref": "#/$defs/Foundations"
+    },
+    "departure": {
+      "$ref": "#/$defs/Departure"
+    },
+    "conclusion": {
+      "$ref": "#/$defs/Conclusion"
+    },
+    "bibliography": {
+      "$ref": "#/$defs/Bibliography"
+    },
+    "calculations": {
+      "$ref": "#/$defs/Calculations"
+    },
+    "declaration": {
+      "$ref": "#/$defs/Declaration"
+    }
+  },
+  "$defs": {
+    "Introduction": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Einleitung",
+      "properties": {
+        "jakobmichaelreinholdlenzwork": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "approach_and_thesis": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "structure_of_the_paper": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "ComedyIn18thCentury": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Das Komödien-Verständnis des ausgehenden 18. Jahrhunderts",
+      "properties": {
+        "aristotle_poetics_tragedy": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "gottsched_critische_dichtkunst": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "katharsis_and_genre_effect": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "lessing_and_the_genre_line": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "ComedyByLenz": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Das Komödien-Verständnis von J. M. R. Lenz",
+      "properties": {
+        "lenz_anmerkungen_position": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "comedy_as_social_painting": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "polemic_against_french_theatre": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "double_standard_for_analysis": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "Foundations": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Grundlagen des Komödien-Begriffs nach J. M. R. Lenz",
+      "properties": {
+        "standard_and_counterposition": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "comedyIn18thCentury": {
+          "$ref": "#/$defs/ComedyIn18thCentury"
+        },
+        "comedyByLenz": {
+          "$ref": "#/$defs/ComedyByLenz"
+        }
+      }
+    },
+    "ThreeUnities": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Die Abkehr von den drei Einheiten",
+      "properties": {
+        "unities_violated": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "openness_as_programme": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "first_act_as_example": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "ActionFromConditions": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Die Handlung als Ursprung: nicht Figuren, sondern Verhältnisse",
+      "properties": {
+        "laeuffer_as_function": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "radicalised_primacy_of_action": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "decisions_forced_by_circumstance": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "DoubleEnding": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Tragik und Komik: der doppelte Schluss",
+      "properties": {
+        "piled_up_tragic_motifs": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "schluesse": {
+          "title": "Schlüsse",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "$render": {
+            "marker": "numbered"
+          }
+        },
+        "overabundant_reconciliation": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "simultaneity_as_redefinition": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "Departure": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Die Abkehr vom Regeltheater im Hofmeister",
+      "properties": {
+        "three_probes": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "threeUnities": {
+          "$ref": "#/$defs/ThreeUnities"
+        },
+        "actionFromConditions": {
+          "$ref": "#/$defs/ActionFromConditions"
+        },
+        "doubleEnding": {
+          "$ref": "#/$defs/DoubleEnding"
+        }
+      }
+    },
+    "Conclusion": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Fazit",
+      "properties": {
+        "results": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "open_questions": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "genre_historical_place": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "Declaration": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Eigenständigkeitserklärung",
+      "properties": {
+        "declaration_core": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "ai_tools_declaration": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "kiWerkzeuge": {
+          "title": "KI-Werkzeuge",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/KiWerkzeug"
+          }
+        },
+        "consequences_note": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "KiWerkzeug": {
+      "type": "object",
+      "title": "KI-Tool-Einsatz",
+      "properties": {
+        "purpose": {
+          "title": "Zweck der Nutzung",
+          "type": "string"
+        },
+        "used": {
+          "title": "ja / nein",
+          "type": "boolean",
+          "default": false
+        },
+        "tool": {
+          "title": "Tool",
+          "type": "string"
+        }
+      }
+    },
+    "Chapter": {
+      "required": [
+        "title"
+      ]
+    },
+    "Calculations": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Anhang: Rechenbeispiele",
+      "properties": {
+        "with_anchor_variables": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "with_inline_formula": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "with_links": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "with_tables": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "with_literature": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "with_procedure": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "geboren": {
+          "title": "Geboren",
+          "type": "integer"
+        },
+        "gestorben": {
+          "title": "Gestorben",
+          "type": "integer"
+        },
+        "erscheinungsjahr": {
+          "title": "Erscheinungsjahr",
+          "type": "integer"
+        },
+        "lebensalter": {
+          "title": "Lebensalter",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "gestorben - geboren"
+          }
+        },
+        "alter_beim_erscheinen": {
+          "title": "Alter beim Erscheinen",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "erscheinungsjahr - geboren"
+          }
+        },
+        "ki_zwecke": {
+          "title": "KI-Zwecke",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "bundle.declaration.kiWerkzeuge.length"
+          }
+        },
+        "ki_eingesetzt": {
+          "title": "KI eingesetzt",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "bundle.declaration.kiWerkzeuge.filter(w => w.used).length"
+          }
+        },
+        "literatur_titel": {
+          "title": "Titel im Verzeichnis",
+          "description": "Berechnet aus der aufgelösten Literatur (backstay.literature()): die Titel, die das Verzeichnis führt — selbst erfasste und aus Zotero übernommene zusammen.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "backstay.literature().length"
+          }
+        },
+        "literatur_quellen": {
+          "title": "Davon Quellen",
+          "description": "Berechnet: die Titel der Gattung »source« (Primärliteratur). Die Gattung ist Backstay-Eigentum, sie steht auch bei Zotero-Titeln in der Literatur-Datei.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "backstay.literature().filter(e => e.category === 'source').length"
+          }
+        },
+        "matrices": {
+          "$ref": "#/$defs/Matrices"
+        }
+      }
+    },
+    "Matrices": {
+      "$ref": "#/$defs/Chapter",
+      "title": "Matrizen",
+      "properties": {
+        "matrices_intro": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "matrix_a": {
+          "title": "Matrix A",
+          "$render": {
+            "caption": true
+          },
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MatrixRow"
+          }
+        },
+        "matrix_b": {
+          "title": "Matrix B",
+          "$render": {
+            "caption": true
+          },
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MatrixRow"
+          }
+        },
+        "product_intro": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "product": {
+          "title": "Produkt A·B",
+          "$render": {
+            "caption": true
+          },
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ProductRow"
+          }
+        },
+        "determinants": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "inverse_intro": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "adjugate": {
+          "title": "Adjunkte adj(A)",
+          "$render": {
+            "caption": true
+          },
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/AdjugateRow"
+          }
+        },
+        "closing": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "trace_a": {
+          "title": "Spur A",
+          "description": "Berechnet: die Summe der Diagonalelemente von A.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "matrix_a[0].c1 + matrix_a[1].c2 + matrix_a[2].c3"
+          }
+        },
+        "det_a": {
+          "title": "det A",
+          "description": "Berechnet: Determinante von A nach der Regel von Sarrus (p, q, r sind die drei Zeilen). Ganzzahlig, weil A ganzzahlig ist.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const [p, q, r] = matrix_a; p.c1*q.c2*r.c3 + p.c2*q.c3*r.c1 + p.c3*q.c1*r.c2 - p.c3*q.c2*r.c1 - p.c2*q.c1*r.c3 - p.c1*q.c3*r.c2"
+          }
+        },
+        "det_b": {
+          "title": "det B",
+          "description": "Berechnet: Determinante von B nach der Regel von Sarrus.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const [p, q, r] = matrix_b; p.c1*q.c2*r.c3 + p.c2*q.c3*r.c1 + p.c3*q.c1*r.c2 - p.c3*q.c2*r.c1 - p.c2*q.c1*r.c3 - p.c1*q.c3*r.c2"
+          }
+        },
+        "det_product": {
+          "title": "det (A·B)",
+          "description": "Berechnet: die Determinante des Produkts — direkt aus der berechneten Tabelle »Produkt A·B« (Formel-Kette: eine berechnete Zelle liest andere berechnete Zellen). Nach dem Multiplikationssatz muss sie det A · det B ergeben.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const [p, q, r] = product.map(z => [z.c1, z.c2, z.c3]); p[0]*q[1]*r[2] + p[1]*q[2]*r[0] + p[2]*q[0]*r[1] - p[2]*q[1]*r[0] - p[1]*q[0]*r[2] - p[0]*q[2]*r[1]"
+          }
+        },
+        "det_probe": {
+          "title": "Probe det A · det B",
+          "description": "Berechnet aus drei berechneten Zellen (Kette zweiter Stufe): das Produkt der Einzel-Determinanten. Stimmt es mit det (A·B) überein, ist der Multiplikationssatz an diesem Beispiel bestätigt.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "det_a * det_b"
+          }
+        }
+      }
+    },
+    "MatrixRow": {
+      "type": "object",
+      "title": "Matrix-Zeile",
+      "description": "Eine Zeile einer ganzzahligen 3×3-Matrix: drei Zahlen, jede eine editierbare Zelle.",
+      "properties": {
+        "c1": {
+          "title": "Spalte 1",
+          "type": "integer"
+        },
+        "c2": {
+          "title": "Spalte 2",
+          "type": "integer"
+        },
+        "c3": {
+          "title": "Spalte 3",
+          "type": "integer"
+        }
+      }
+    },
+    "ProductRow": {
+      "type": "object",
+      "title": "Produkt-Zeile",
+      "description": "Eine Zeile von A·B: gespeichert ist nur der Zeilen-Index i, die drei Werte rechnet je Spalte ihre Formel.",
+      "properties": {
+        "i": {
+          "title": "Zeile",
+          "description": "Zeilen-Index i (ab 0) — die einzige gespeicherte Zelle dieser Zeile.",
+          "type": "integer"
+        },
+        "c1": {
+          "title": "Spalte 1",
+          "description": "Berechnet: Skalarprodukt aus Zeile i von A und Spalte 1 von B.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const A = bundle.calculations.matrices.matrix_a, B = bundle.calculations.matrices.matrix_b, a = A[i]; a.c1 * B[0].c1 + a.c2 * B[1].c1 + a.c3 * B[2].c1"
+          }
+        },
+        "c2": {
+          "title": "Spalte 2",
+          "description": "Berechnet: Skalarprodukt aus Zeile i von A und Spalte 2 von B.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const A = bundle.calculations.matrices.matrix_a, B = bundle.calculations.matrices.matrix_b, a = A[i]; a.c1 * B[0].c2 + a.c2 * B[1].c2 + a.c3 * B[2].c2"
+          }
+        },
+        "c3": {
+          "title": "Spalte 3",
+          "description": "Berechnet: Skalarprodukt aus Zeile i von A und Spalte 3 von B.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const A = bundle.calculations.matrices.matrix_a, B = bundle.calculations.matrices.matrix_b, a = A[i]; a.c1 * B[0].c3 + a.c2 * B[1].c3 + a.c3 * B[2].c3"
+          }
+        }
+      }
+    },
+    "AdjugateRow": {
+      "type": "object",
+      "title": "Adjunkten-Zeile",
+      "description": "Eine Zeile von adj(A): gespeichert ist nur der Zeilen-Index i, jede Wert-Spalte rechnet ihren Kofaktor — ganzzahlig, ohne Division.",
+      "properties": {
+        "i": {
+          "title": "Zeile",
+          "description": "Zeilen-Index i (ab 0) — die einzige gespeicherte Zelle dieser Zeile.",
+          "type": "integer"
+        },
+        "c1": {
+          "title": "Spalte 1",
+          "description": "Berechnet: Kofaktor von A (zyklische Kofaktor-Formel für 3×3), Spalte 1 der Adjunkten.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const A = bundle.calculations.matrices.matrix_a.map(r => [r.c1, r.c2, r.c3]); const i = this.i, j = 0; A[(j+1)%3][(i+1)%3]*A[(j+2)%3][(i+2)%3] - A[(j+1)%3][(i+2)%3]*A[(j+2)%3][(i+1)%3]"
+          }
+        },
+        "c2": {
+          "title": "Spalte 2",
+          "description": "Berechnet: Kofaktor von A (zyklische Kofaktor-Formel für 3×3), Spalte 2 der Adjunkten.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const A = bundle.calculations.matrices.matrix_a.map(r => [r.c1, r.c2, r.c3]); const i = this.i, j = 1; A[(j+1)%3][(i+1)%3]*A[(j+2)%3][(i+2)%3] - A[(j+1)%3][(i+2)%3]*A[(j+2)%3][(i+1)%3]"
+          }
+        },
+        "c3": {
+          "title": "Spalte 3",
+          "description": "Berechnet: Kofaktor von A (zyklische Kofaktor-Formel für 3×3), Spalte 3 der Adjunkten.",
+          "type": "integer",
+          "default": {
+            "$kind": "js",
+            "expression": "const A = bundle.calculations.matrices.matrix_a.map(r => [r.c1, r.c2, r.c3]); const i = this.i, j = 2; A[(j+1)%3][(i+1)%3]*A[(j+2)%3][(i+2)%3] - A[(j+1)%3][(i+2)%3]*A[(j+2)%3][(i+1)%3]"
+          }
+        }
+      }
+    }
+  },
+  "$procedures": {
+    "wortzahl": {
+      "title": "Wörter zählen",
+      "description": "Funktion für Ausdrücke: die Zahl der Wörter eines Textes (Leerraum trennt).",
+      "parameters": [
+        "text"
+      ],
+      "script": "text.trim() === \"\" ? 0 : text.trim().split(/\\s+/).length"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$main": true,
+  "title": "Anker-Demo",
+  "description": "Die vier Ankertypen am ganzen Feld: JS, Adresse, Query und URI. Der Ausdruck steht im Anker, im Feld steht das Ergebnis. Dazu Formel und Query an einer Textstelle: dort steht das Ergebnis in Anzeige und Druck an der Stelle des Wortlauts, gespeichert bleibt der Wortlaut.",
+  "type": "object",
+  "properties": {
+    "titel": {
+      "title": "Titel",
+      "type": "string"
+    },
+    "reihen": {
+      "title": "Reihen",
+      "type": "integer"
+    },
+    "pro_reihe": {
+      "title": "Pro Reihe",
+      "type": "integer"
+    },
+    "gesamt": {
+      "title": "Gesamt (JS)",
+      "type": "integer"
+    },
+    "reihen_kopie": {
+      "title": "Reihen noch einmal (Adresse)",
+      "type": "integer"
+    },
+    "kartons": {
+      "title": "Kartons",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "karton_namen": {
+      "title": "Namen aller Kartons (Query)",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quelle": {
+      "title": "Quelle (URI)",
+      "type": "string",
+      "format": "uri"
+    },
+    "satz": {
+      "title": "Satz (Formel und Query an einer Textstelle)",
+      "type": "string",
+      "$render": {
+        "kind": "longtext"
+      }
+    }
+  }
+}

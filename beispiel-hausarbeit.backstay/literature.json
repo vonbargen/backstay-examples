@@ -1,0 +1,191 @@
+{
+  "$schema": "literature.schema.json",
+  "F1": {
+    "itemType": "book",
+    "category": "study",
+    "title": "Die Dichtungstheorie der Antike. Aristoteles, Horaz, Longin. Eine Einführung",
+    "shortTitle": "Dichtungstheorie der Antike",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Manfred",
+        "lastName": "Fuhrmann",
+        "name": ""
+      }
+    ],
+    "date": "1992",
+    "place": "Darmstadt",
+    "publisher": "WBG",
+    "publicationTitle": "",
+    "bookTitle": "",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "series": "",
+    "seriesNumber": "",
+    "edition": "2. überarbeitete und veränderte Auflage",
+    "url": "",
+    "accessDate": ""
+  },
+  "lenz_hofmeister": {
+    "itemType": "book",
+    "category": "source",
+    "title": "Der Hofmeister. Oder Vorteile der Privaterziehung. Eine Komödie. Studienausgabe",
+    "shortTitle": "Der Hofmeister",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Jakob Michael Reinhold",
+        "lastName": "Lenz",
+        "name": ""
+      }
+    ],
+    "date": "2002",
+    "place": "Ditzingen",
+    "publisher": "Reclam",
+    "publicationTitle": "",
+    "bookTitle": "",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "series": "",
+    "seriesNumber": "",
+    "edition": "",
+    "url": "",
+    "accessDate": ""
+  },
+  "lenz_anmerkungen": {
+    "itemType": "bookSection",
+    "category": "source",
+    "title": "Anmerkungen übers Theater",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Jakob Michael Reinhold",
+        "lastName": "Lenz",
+        "name": ""
+      },
+      {
+        "creatorType": "editor",
+        "firstName": "Hans-Günther",
+        "lastName": "Schwarz",
+        "name": ""
+      }
+    ],
+    "date": "2014",
+    "place": "Stuttgart",
+    "publisher": "Reclam",
+    "publicationTitle": "",
+    "bookTitle": "Anmerkungen übers Theater. Shakespeare-Arbeiten und Shakespeare-Übersetzungen. Studienausgabe",
+    "volume": "",
+    "issue": "",
+    "pages": "7-47",
+    "series": "",
+    "seriesNumber": "",
+    "edition": "",
+    "url": "",
+    "accessDate": ""
+  },
+  "hose2023": {
+    "category": "source"
+  },
+  "gottsched1973": {
+    "itemType": "bookSection",
+    "category": "source",
+    "title": "Versuch einer Critischen Dichtkunst. Anderer Besonderer Theil",
+    "shortTitle": "Critische Dichtkunst",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Johann Christoph",
+        "lastName": "Gottsched",
+        "name": ""
+      },
+      {
+        "creatorType": "editor",
+        "firstName": "Brigitte",
+        "lastName": "Birke",
+        "name": ""
+      },
+      {
+        "creatorType": "editor",
+        "firstName": "Joachim",
+        "lastName": "Birke",
+        "name": ""
+      }
+    ],
+    "date": "1973",
+    "place": "Berlin/Boston",
+    "publisher": "De Gruyter",
+    "publicationTitle": "",
+    "bookTitle": "Johann Christoph Gottsched. Ausgewählte Werke. Sechster Band. Zweiter Teil",
+    "volume": "",
+    "issue": "",
+    "pages": "319-356",
+    "series": "",
+    "seriesNumber": "",
+    "edition": "",
+    "url": "",
+    "accessDate": ""
+  },
+  "demuth1994": {
+    "itemType": "book",
+    "category": "study",
+    "title": "Realität als Geschichte. Biographie, Historie und Dichtung bei J.M.R. Lenz",
+    "shortTitle": "Realität als Geschichte",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Volker",
+        "lastName": "Demuth",
+        "name": ""
+      }
+    ],
+    "date": "1994",
+    "place": "Würzburg",
+    "publisher": "Königshausen und Neumann",
+    "publicationTitle": "",
+    "bookTitle": "",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "series": "",
+    "seriesNumber": "",
+    "edition": "",
+    "url": "",
+    "accessDate": ""
+  },
+  "durzak1994": {
+    "itemType": "bookSection",
+    "category": "study",
+    "title": "Lenz’ Der Hofmeister oder Die Selbstkasteiung des bürgerlichen Intellektuellen. Lenz’ Stück im Kontext des bürgerlichen Trauerspiels",
+    "shortTitle": "Lenz’ Der Hofmeister",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Manfred",
+        "lastName": "Durzak",
+        "name": ""
+      },
+      {
+        "creatorType": "editor",
+        "firstName": "David",
+        "lastName": "Hill",
+        "name": ""
+      }
+    ],
+    "date": "1994",
+    "place": "Opladen",
+    "publisher": "Westdeutscher Verlag",
+    "publicationTitle": "",
+    "bookTitle": "Jakob Michael Reinhold Lenz. Studien zum Gesamtwerk",
+    "volume": "",
+    "issue": "",
+    "pages": "110-119",
+    "series": "",
+    "seriesNumber": "",
+    "edition": "",
+    "url": "",
+    "accessDate": ""
+  }
+}

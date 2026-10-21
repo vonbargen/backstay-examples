@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Notizen",
+  "$import": "backstay:notizen",
+  "type": "object",
+  "$entryType": "#/$defs/Notiz",
+  "properties": {
+    "frenchclassicalism": {
+      "$ref": "#/$defs/Notiz",
+      "properties": {
+        "franzoesischen_klassizismus": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "periodoffrenchclassicalliterature": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "franceclassicalera": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "concept": {
+          "$ref": "#/$defs/Kapitel"
+        }
+      }
+    },
+    "empowerment": {
+      "$ref": "#/$defs/Notiz",
+      "properties": {
+        "emanzipation": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "empowermentefforts": {
+          "$ref": "#/$defs/Paragraph"
+        },
+        "definition": {
+          "$ref": "#/$defs/Kapitel2"
+        },
+        "kapitel": {
+          "$ref": "#/$defs/Kapitel3"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "Kapitel": {
+      "$ref": "#/$defs/Chapter",
+      "title": "",
+      "properties": {
+        "absatz": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "Kapitel2": {
+      "$ref": "#/$defs/Chapter",
+      "title": "",
+      "properties": {
+        "absatz": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    },
+    "Kapitel3": {
+      "$ref": "#/$defs/Chapter",
+      "title": "",
+      "properties": {
+        "absatz2": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "key": "hose2023",
+      "itemType": "book",
+      "title": "Aristoteles, ›Poetik‹. Einleitung, Text, Übersetzung und Kommentar. Mit einem Anhang: Texte zur aristotelischen Literaturtheorie",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Martin",
+          "lastName": "Hose",
+          "name": ""
+        }
+      ],
+      "date": "2023",
+      "place": "Berlin/Boston",
+      "publisher": "De Gruyter",
+      "publicationTitle": "",
+      "bookTitle": "",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "series": "",
+      "seriesNumber": "",
+      "edition": "",
+      "url": "",
+      "accessDate": ""
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "anker_demo.schema.json",
+  "titel": "Anker-Demo",
+  "reihen": 6,
+  "pro_reihe": 7,
+  "satz": "Im Karton liegen zweiundvierzig Flaschen, der erste heißt Rot.",
+  "kartons": [
+    {
+      "name": "Rot"
+    },
+    {
+      "name": "Weiß"
+    }
+  ],
+  "$anchors": {
+    "satz": [
+      {
+        "kind": "value",
+        "prefix": "Im Karton liegen ",
+        "exact": "zweiundvierzig",
+        "suffix": " Flaschen, der erste heißt Rot.",
+        "value": {
+          "$kind": "js",
+          "expression": "reihen * pro_reihe"
+        }
+      },
+      {
+        "kind": "value",
+        "prefix": "erzig Flaschen, der erste heißt ",
+        "exact": "Rot",
+        "suffix": ".",
+        "value": {
+          "$kind": "query",
+          "query": "$.kartons[0].name"
+        }
+      }
+    ],
+    "gesamt": [
+      {
+        "kind": "value",
+        "value": {
+          "$kind": "js",
+          "expression": "reihen * pro_reihe"
+        }
+      }
+    ],
+    "karton_namen": [
+      {
+        "kind": "value",
+        "value": {
+          "$kind": "query",
+          "query": "$.kartons[*].name"
+        }
+      }
+    ],
+    "quelle": [
+      {
+        "kind": "value",
+        "value": {
+          "$kind": "uri",
+          "target": "https://example.org/weinkarton"
+        }
+      }
+    ],
+    "reihen_kopie": [
+      {
+        "kind": "value",
+        "value": {
+          "$kind": "address",
+          "target": "/reihen"
+        }
+      }
+    ]
+  }
+}

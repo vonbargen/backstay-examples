@@ -1,0 +1,58 @@
+{
+  "$types": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Dokument",
+    "$import": "backstay:document",
+    "$ref": "#/$defs/Chapter",
+    "required": [
+      "title",
+      "einleitung"
+    ],
+    "properties": {
+      "einleitung": {
+        "$ref": "#/$defs/Einleitung"
+      }
+    },
+    "$defs": {
+      "Chapter": {
+        "required": [
+          "title"
+        ]
+      },
+      "Einleitung": {
+        "$ref": "#/$defs/Chapter",
+        "title": "Einleitung",
+        "properties": {
+          "worum_es_geht": {
+            "$ref": "#/$defs/Paragraph"
+          },
+          "basis": {
+            "type": "integer",
+            "title": "Basis"
+          }
+        }
+      }
+    }
+  },
+  "title": "Das Dokument",
+  "einleitung": {
+    "title": "Einleitung",
+    "worum_es_geht": {
+      "content": "Ein ausgegliedertes Feld der Wurzel: `$files` sagt, dass dieses Dokument in dokument.json liegt.",
+      "$anchors": {
+        "content": [
+          {
+            "kind": "footnote",
+            "prefix": "Ein ",
+            "exact": "ausgegliedertes Feld",
+            "suffix": " der Wurzel: `$files` sagt, dass dieses Dokument in dokument.json liegt.",
+            "targets": [
+              "/notizen/idee"
+            ]
+          }
+        ]
+      }
+    },
+    "basis": 6
+  }
+}

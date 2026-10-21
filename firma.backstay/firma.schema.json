@@ -1,0 +1,384 @@
+{
+  "$main": true,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Firmendaten",
+  "description": "Stammdaten einer Firma mit Abteilungen, Produkten und Kunden",
+  "$procedures": {
+    "abteilungenUebersicht": {
+      "title": "Abteilungen mit Mitarbeitern und Projekten",
+      "queries": [
+        "$.abteilungen[*]",
+        "$.abteilungen[*].mitarbeiter[*]",
+        "$.abteilungen[*].projekte[*]"
+      ]
+    },
+    "swiftAnreichern": {
+      "title": "Mit Swift anreichern (Demo)",
+      "capability": "swift-demo"
+    },
+    "kiZusammenfassung": {
+      "title": "KI-Zusammenfassung (Foundation Models)",
+      "capability": "ki-zusammenfassung"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "firma": {
+      "title": "Unternehmen",
+      "description": "Stammdaten der Firma",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Firmenname",
+          "type": "string"
+        },
+        "gruendung": {
+          "title": "Gründungsjahr",
+          "type": "integer"
+        },
+        "aktiv": {
+          "title": "Aktiv",
+          "type": "boolean",
+          "description": "Ist die Firma noch aktiv?"
+        },
+        "hauptsitz": {
+          "title": "Hauptsitz",
+          "description": "Adresse des Firmensitzes",
+          "type": "object",
+          "properties": {
+            "strasse": {
+              "title": "Straße",
+              "type": "string"
+            },
+            "stadt": {
+              "title": "Stadt",
+              "type": "string"
+            },
+            "plz": {
+              "title": "Postleitzahl",
+              "type": "string"
+            },
+            "land": {
+              "title": "Land",
+              "type": "string"
+            },
+            "koordinaten": {
+              "title": "Koordinaten",
+              "type": "object",
+              "properties": {
+                "lat": {
+                  "title": "Breitengrad",
+                  "type": "number"
+                },
+                "lon": {
+                  "title": "Längengrad",
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "kontakt": {
+          "title": "Kontaktdaten",
+          "type": "object",
+          "properties": {
+            "telefon": {
+              "title": "Telefon",
+              "type": "string"
+            },
+            "email": {
+              "title": "E-Mail",
+              "type": "string",
+              "format": "email"
+            },
+            "web": {
+              "title": "Webseite",
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      }
+    },
+    "abteilungen": {
+      "title": "Abteilungen",
+      "description": "Alle Abteilungen der Firma",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/abteilung"
+      }
+    },
+    "produkte": {
+      "title": "Produkte",
+      "description": "Produktportfolio der Firma",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/produkt"
+      }
+    },
+    "kunden": {
+      "title": "Kunden",
+      "description": "Kundenstamm",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/kunde"
+      }
+    },
+    "meta": {
+      "title": "Metadaten",
+      "type": "object",
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "integer"
+        },
+        "exportiert": {
+          "title": "Exportdatum",
+          "type": "string"
+        },
+        "format": {
+          "title": "Format",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "abteilung": {
+      "title": "Abteilung",
+      "$titleField": "name",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Abteilungsname",
+          "type": "string"
+        },
+        "leitung": {
+          "title": "Abteilungsleiter/in",
+          "type": "string"
+        },
+        "budget": {
+          "title": "Budget (EUR)",
+          "type": "number"
+        },
+        "mitarbeiter": {
+          "title": "Mitarbeiter",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mitarbeiter"
+          }
+        },
+        "projekte": {
+          "title": "Projekte",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/projekt"
+          }
+        }
+      }
+    },
+    "mitarbeiter": {
+      "title": "Mitarbeiter/in",
+      "$titleField": "name",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "rolle": {
+          "title": "Rolle",
+          "type": "string"
+        },
+        "seit": {
+          "title": "Dabei seit",
+          "type": "integer",
+          "description": "Jahr des Eintritts"
+        },
+        "remote": {
+          "title": "Remote",
+          "type": "boolean",
+          "description": "Arbeitet remote?"
+        }
+      }
+    },
+    "projekt": {
+      "title": "Projekt",
+      "$titleField": "name",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Projektname",
+          "type": "string"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        },
+        "budget": {
+          "title": "Budget (EUR)",
+          "type": "number"
+        },
+        "sprachen": {
+          "title": "Technologien",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "produkt": {
+      "title": "Produkt",
+      "$titleField": "name",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Produkt-ID",
+          "type": "string",
+          "description": "Kennung des Produkts im Warenwirtschaftssystem der Firma (externes System, dort vergeben). In Backstay nur mitgeführt — die Identität eines Produkts ist seine Adresse."
+        },
+        "name": {
+          "title": "Produktname",
+          "type": "string"
+        },
+        "kategorie": {
+          "title": "Kategorie",
+          "type": "string"
+        },
+        "preis": {
+          "title": "Preis",
+          "type": "object",
+          "properties": {
+            "monatlich": {
+              "title": "Monatspreis",
+              "type": "number"
+            },
+            "jaehrlich": {
+              "title": "Jahrespreis",
+              "type": "number"
+            },
+            "waehrung": {
+              "title": "Währung",
+              "type": "string"
+            }
+          }
+        },
+        "features": {
+          "title": "Features",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "versionen": {
+          "title": "Versionen",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/version"
+          }
+        }
+      }
+    },
+    "version": {
+      "title": "Version",
+      "$titleField": "version",
+      "type": "object",
+      "properties": {
+        "version": {
+          "title": "Versionsnummer",
+          "type": "string"
+        },
+        "datum": {
+          "title": "Erscheinungsdatum",
+          "type": "string"
+        },
+        "typ": {
+          "title": "Release-Typ",
+          "type": "string",
+          "description": "major, minor oder patch"
+        }
+      }
+    },
+    "kunde": {
+      "title": "Kunde",
+      "$titleField": "firma",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Kunden-ID",
+          "type": "string"
+        },
+        "firma": {
+          "title": "Firmenname",
+          "type": "string"
+        },
+        "branche": {
+          "title": "Branche",
+          "type": "string"
+        },
+        "seit": {
+          "title": "Kunde seit",
+          "type": "string"
+        },
+        "produkte": {
+          "title": "Genutzte Produkte",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "kontakt": {
+          "title": "Ansprechpartner",
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "email": {
+              "title": "E-Mail",
+              "type": "string",
+              "format": "email"
+            }
+          }
+        },
+        "adressen": {
+          "title": "Adressen",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/kundenadresse"
+          }
+        }
+      }
+    },
+    "kundenadresse": {
+      "title": "Adresse",
+      "$titleField": "typ",
+      "type": "object",
+      "properties": {
+        "typ": {
+          "title": "Adresstyp",
+          "type": "string",
+          "description": "z.B. Hauptsitz, Filiale, Lager"
+        },
+        "strasse": {
+          "title": "Straße",
+          "type": "string"
+        },
+        "plz": {
+          "title": "PLZ",
+          "type": "string"
+        },
+        "stadt": {
+          "title": "Stadt",
+          "type": "string"
+        },
+        "land": {
+          "title": "Land",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

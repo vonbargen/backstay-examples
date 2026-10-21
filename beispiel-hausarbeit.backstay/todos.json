@@ -1,0 +1,17 @@
+{
+  "$schema": "todos.schema.json",
+  "gui_abnahme_fokus_bauten": {
+    "title": "GUI-Abnahme Fokus-Bauten",
+    "publiziert": false,
+    "likes": 0,
+    "aenderungen": 2,
+    "art": "aufgabe",
+    "status": "offen",
+    "prio": 0,
+    "getauft": "2026-09-15T08:45:29.641Z",
+    "autor": "lena",
+    "offen_fuer_dich_die_gui_abnahme_der_foku": {
+      "content": "Offen für Dich: die GUI-Abnahme der Fokus-Bauten. Einmal Tab-Runde, ⌃Tab-Runde, ⌘1–4 und ⌘F durchgehen, dann die Sidebar per Toolbar-Item einklappen und prüfen, dass ⌘1 nichts kaputt macht und ⌃Tab rund läuft."
+    }
+  }
+}

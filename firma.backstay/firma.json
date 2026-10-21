@@ -1,0 +1,306 @@
+{
+  "$schema": "firma.schema.json",
+  "abteilungen": [
+    {
+      "budget": 500000,
+      "leitung": "Max Muster",
+      "mitarbeiter": [
+        {
+          "name": "Johanna Schmidt",
+          "remote": false,
+          "rolle": "Backend-Entwicklerin",
+          "seit": 2019
+        },
+        {
+          "name": "Ben Weber",
+          "remote": true,
+          "rolle": "Frontend-Entwickler",
+          "seit": 2021
+        },
+        {
+          "name": "Clara Torres",
+          "remote": true,
+          "rolle": "DevOps",
+          "seit": 2020
+        }
+      ],
+      "name": "Engineering",
+      "projekte": [
+        {
+          "budget": 150000,
+          "name": "API v2",
+          "sprachen": [
+            "Rust",
+            "Python"
+          ],
+          "status": "aktiv"
+        },
+        {
+          "budget": 80000,
+          "name": "Dashboard",
+          "sprachen": [
+            "TypeScript",
+            "React"
+          ],
+          "status": "abgeschlossen"
+        },
+        {
+          "budget": 200000,
+          "name": "Mobile App",
+          "sprachen": [
+            "Kotlin",
+            "Swift"
+          ],
+          "status": "geplant"
+        }
+      ]
+    },
+    {
+      "budget": 200000,
+      "leitung": "Lisa Braun",
+      "mitarbeiter": [
+        {
+          "name": "David Kim",
+          "remote": false,
+          "rolle": "Content Manager",
+          "seit": 2022
+        },
+        {
+          "name": "Eva Richter",
+          "remote": true,
+          "rolle": "Social Media",
+          "seit": 2023
+        }
+      ],
+      "name": "Marketing",
+      "projekte": [
+        {
+          "budget": 50000,
+          "name": "Rebranding",
+          "sprachen": [],
+          "status": "aktiv"
+        },
+        {
+          "budget": 30000,
+          "name": "Kampagne Q2",
+          "sprachen": [],
+          "status": "geplant"
+        }
+      ]
+    },
+    {
+      "budget": 300000,
+      "leitung": "Frank Novak",
+      "mitarbeiter": [
+        {
+          "name": "Gina Bauer",
+          "remote": false,
+          "rolle": "Key Account",
+          "seit": 2018
+        },
+        {
+          "name": "Hasan Yilmaz",
+          "remote": false,
+          "rolle": "Inside Sales",
+          "seit": 2021
+        },
+        {
+          "name": "Irene Maier",
+          "remote": true,
+          "rolle": "Partnermanagement",
+          "seit": 2020
+        }
+      ],
+      "name": "Verkauf",
+      "projekte": [
+        {
+          "budget": 40000,
+          "name": "CRM Migration",
+          "sprachen": [
+            "Salesforce"
+          ],
+          "status": "aktiv"
+        }
+      ]
+    }
+  ],
+  "firma": {
+    "aktiv": true,
+    "gruendung": 2015,
+    "hauptsitz": {
+      "koordinaten": {
+        "lat": 52.5219,
+        "lon": 13.4132
+      },
+      "land": "Deutschland",
+      "plz": "10178",
+      "stadt": "Berlin",
+      "strasse": "Alexanderplatz 1"
+    },
+    "kontakt": {
+      "email": "info@techcorp.de",
+      "telefon": "+49-30-12345678",
+      "web": "https://techcorp.de"
+    },
+    "name": "TechCorp GmbH"
+  },
+  "kunden": [
+    {
+      "adressen": [
+        {
+          "land": "Deutschland",
+          "plz": "70173",
+          "stadt": "Stuttgart",
+          "strasse": "Motorenweg 5",
+          "typ": "Hauptsitz"
+        },
+        {
+          "land": "Deutschland",
+          "plz": "73728",
+          "stadt": "Esslingen",
+          "strasse": "Industriestr. 42",
+          "typ": "Werk"
+        }
+      ],
+      "branche": "Automotive",
+      "firma": "Aaron AG",
+      "id": "kd_100",
+      "kontakt": {
+        "email": "j.kern@automotion.de",
+        "name": "Julia Kern"
+      },
+      "produkte": [
+        "prod_001",
+        "prod_002"
+      ],
+      "seit": "2020-06-15"
+    },
+    {
+      "adressen": [
+        {
+          "land": "Deutschland",
+          "plz": "80331",
+          "stadt": "München",
+          "strasse": "Klinikstr. 12",
+          "typ": "Hauptsitz"
+        },
+        {
+          "land": "Deutschland",
+          "plz": "20095",
+          "stadt": "Hamburg",
+          "strasse": "Spitalerstr. 8",
+          "typ": "Filiale"
+        },
+        {
+          "land": "Deutschland",
+          "plz": "20457",
+          "stadt": "Hamburg",
+          "strasse": "Am Hafen 3",
+          "typ": "Lager"
+        }
+      ],
+      "branche": "Healthcare",
+      "firma": "MedTech Solutions",
+      "id": "kd_101",
+      "kontakt": {
+        "email": "s.huber@medtech-sol.de",
+        "name": "Stefan Huber"
+      },
+      "produkte": [
+        "prod_001",
+        "prod_002"
+      ],
+      "seit": "2021-03-01"
+    },
+    {
+      "adressen": [
+        {
+          "land": "Deutschland",
+          "plz": "10117",
+          "stadt": "Berlin",
+          "strasse": "Universitätsstr. 1",
+          "typ": "Büro"
+        }
+      ],
+      "branche": "Education",
+      "firma": "EduLearn GmbH",
+      "id": "kd_102",
+      "kontakt": {
+        "email": "n.vogel@edulearn.de",
+        "name": "Nina Vogel"
+      },
+      "produkte": [
+        "prod_001",
+        "prod_002"
+      ],
+      "seit": "2023-01-10"
+    }
+  ],
+  "meta": {
+    "exportiert": "2026-04-14",
+    "format": "backstay-demo",
+    "version": 1
+  },
+  "produkte": [
+    {
+      "features": [
+        "Echtzeit-Sync",
+        "256-bit Verschlüsselung",
+        "API-Zugang",
+        "SSO"
+      ],
+      "id": "prod_001",
+      "kategorie": "SaaS",
+      "name": "CloudSync Pro",
+      "preis": {
+        "jaehrlich": 299.9,
+        "monatlich": 29.99,
+        "waehrung": "EUR"
+      },
+      "versionen": [
+        {
+          "datum": "2026-03-15",
+          "typ": "patch",
+          "version": "3.2.1"
+        },
+        {
+          "datum": "2026-01-20",
+          "typ": "minor",
+          "version": "3.2.0"
+        },
+        {
+          "datum": "2025-06-01",
+          "typ": "major",
+          "version": "3.0.0"
+        }
+      ]
+    },
+    {
+      "features": [
+        "Backup",
+        "Versionierung",
+        "Audit-Log"
+      ],
+      "id": "prod_002",
+      "kategorie": "On-Premise",
+      "name": "DataVault",
+      "preis": {
+        "jaehrlich": 990.0,
+        "monatlich": 99.0,
+        "waehrung": "EUR"
+      },
+      "versionen": [
+        {
+          "datum": "2026-02-10",
+          "typ": "minor",
+          "version": "1.4.0"
+        },
+        {
+          "datum": "2025-09-01",
+          "typ": "major",
+          "version": "1.0.0"
+        }
+      ]
+    }
+  ]
+}

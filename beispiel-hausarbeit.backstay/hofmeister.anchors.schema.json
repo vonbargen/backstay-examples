@@ -1,0 +1,10 @@
+{
+  "$procedures": {
+    "allAnchors": {
+      "title": "all_anchors",
+      "queries": [
+        "$.anchors..['$anchors'][*].exact"
+      ]
+    }
+  }
+}

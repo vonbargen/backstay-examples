@@ -1,0 +1,41 @@
+{
+  "$schema": "zellen_demo.schema.json",
+  "titel": "Zellen-Demo",
+  "rechnung": "Ein Karton fasst 6 Reihen zu je 7 Flaschen, macht zweiundvierzig Flaschen pro Karton.",
+  "reihen": 6,
+  "pro_reihe": 7,
+  "$anchors": {
+    "rechnung": [
+      {
+        "kind": "value",
+        "prefix": "Ein Karton fasst ",
+        "exact": "6",
+        "suffix": " Reihen zu je 7 Flaschen, macht ",
+        "value": {
+          "$kind": "address",
+          "target": "/reihen"
+        }
+      },
+      {
+        "kind": "value",
+        "prefix": "Ein Karton fasst 6 Reihen zu je ",
+        "exact": "7",
+        "suffix": " Flaschen, macht zweiundvierzig ",
+        "value": {
+          "$kind": "address",
+          "target": "/pro_reihe"
+        }
+      },
+      {
+        "kind": "value",
+        "prefix": " Reihen zu je 7 Flaschen, macht ",
+        "exact": "zweiundvierzig",
+        "suffix": " Flaschen pro Karton.",
+        "value": {
+          "$kind": "address",
+          "target": "/gesamt"
+        }
+      }
+    ]
+  }
+}

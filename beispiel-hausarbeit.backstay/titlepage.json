@@ -1,0 +1,18 @@
+{
+  "logo": "logo.png",
+  "university": "Universität zu Köln",
+  "institute": "Institut für deutsche Sprache und Literatur I",
+  "seminar": "Einführung in die Dramenanalyse",
+  "lecturer": "Prof. Dr. Martina Mustermann",
+  "semester": "Sommersemester 2026",
+  "subtitle": "Eine Analyse der Gattungskonzeption",
+  "author": "Lena Musterfrau",
+  "street": "Musterstraße 12",
+  "city": "50937 Köln",
+  "email": "lena@example.org",
+  "matriculation": "1234567",
+  "program": "Deutsche Sprache und Literatur",
+  "term": "3. Fachsemester",
+  "exam_date": "15.09.2026",
+  "submission_date": "01.09.2026"
+}

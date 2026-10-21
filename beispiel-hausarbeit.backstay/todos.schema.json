@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ToDos",
+  "$import": "backstay:todos",
+  "type": "object",
+  "$order": [
+    "status",
+    "prio"
+  ],
+  "$entryType": "#/$defs/todo",
+  "properties": {
+    "gui_abnahme_fokus_bauten": {
+      "$ref": "#/$defs/todo",
+      "properties": {
+        "offen_fuer_dich_die_gui_abnahme_der_foku": {
+          "$ref": "#/$defs/Paragraph"
+        }
+      }
+    }
+  }
+}

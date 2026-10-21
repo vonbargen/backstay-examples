@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fußnoten",
+  "description": "Die freien Fußnoten des Dokuments: Anmerkungen in ganzen Sätzen, die am Seitenende drucken. Jede Fußnote ist ein benanntes Feld; ein Verweis-Anker im Text zeigt auf sie.",
+  "$import": "backstay:annotation",
+  "type": "object",
+  "$entryType": "#/$defs/Footnote",
+  "properties": {
+    "fuhrmann_dichtungstheorie_der_antike": {
+      "$ref": "#/$defs/Citation"
+    },
+    "fuhrmann_dichtungstheorie_der_antike_s_5": {
+      "$ref": "#/$defs/Citation"
+    },
+    "hose_aristoteles_poetik_einleitung_text_ue": {
+      "$ref": "#/$defs/Citation"
+    },
+    "hose_aristoteles_poetik_einleitung_text_ue_2": {
+      "$ref": "#/$defs/Citation"
+    },
+    "fuhrmann_dichtungstheorie_der_antike_s_8": {
+      "$ref": "#/$defs/Citation"
+    },
+    "gottsched_critische_dichtkunst_s_348": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_anmerkungen_uebers_theater_s_20_f": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_anmerkungen_uebers_theater_s_43": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_anmerkungen_uebers_theater_s_29": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_der_hofmeister_s_5_17": {
+      "$ref": "#/$defs/Citation"
+    },
+    "demuth_realitaet_als_geschichte_s_152": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_der_hofmeister_s_7_14": {
+      "$ref": "#/$defs/Citation"
+    },
+    "durzak_lenz_der_hofmeister_s_112": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_anmerkungen_uebers_theater_s_36": {
+      "$ref": "#/$defs/Citation"
+    },
+    "demuth_realitaet_als_geschichte_s_158": {
+      "$ref": "#/$defs/Citation"
+    },
+    "lenz_der_hofmeister_s_98": {
+      "$ref": "#/$defs/Citation"
+    },
+    "durzak_lenz_der_hofmeister_s_116": {
+      "$ref": "#/$defs/Citation"
+    },
+    "durzak_lenz_der_hofmeister_s_117": {
+      "$ref": "#/$defs/Citation"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$types": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$main": true,
+    "title": "Mein erstes Projekt",
+    "$import": "backstay:document",
+    "$ref": "#/$defs/Chapter",
+    "required": [
+      "title"
+    ],
+    "$defs": {
+      "Chapter": {
+        "required": [
+          "title"
+        ]
+      },
+      "Kapitel": {
+        "$ref": "#/$defs/Chapter",
+        "title": "",
+        "properties": {
+          "viewlayout": {
+            "$ref": "#/$defs/Paragraph"
+          },
+          "hierarchicalstructure": {
+            "$ref": "#/$defs/Paragraph"
+          },
+          "editortitle": {
+            "$ref": "#/$defs/Paragraph"
+          }
+        }
+      }
+    },
+    "properties": {
+      "initialdocument": {
+        "$ref": "#/$defs/Paragraph"
+      },
+      "readme": {
+        "$ref": "#/$defs/Kapitel"
+      }
+    },
+    "description": "EinDateiModul S2 (2026-10-08): ein Modul ist EINE Datei — die Typen stehen unter $types in dokument.json, es gibt keine dokument.schema.json. Das erste eigene Dokument (experiments/modules) als Beispiel."
+  },
+  "title": "Mein erstes Projekt mit Backstay",
+  "getauft": "2026-10-07T18:00:00.000Z",
+  "autor": "Lena Musterfrau",
+  "initialdocument": {
+    "content": "Das ist mein erstes Bachstay Dokument, welches ich von ‚scratch‘ selbst erstelle."
+  },
+  "readme": {
+    "title": "README",
+    "viewlayout": {
+      "content": "Native Desktop-App (Rust) zum Anzeigen und Bearbeiten strukturierter Textdateien im Split-View: **Gliederung links, Tabelle rechts.**"
+    },
+    "hierarchicalstructure": {
+      "content": "Hierarchie und Tabelle zusammen leisten mehr als Text, Hierarchie oder Tabelle allein. Backstay erforscht diesen Ansatz -- mit dem Ziel einer neuen Seitenbeschreibungssprache, in der Dokumente nicht als Fließtext, sondern als Hierarchie parameterbehafteter Bausteine beschrieben werden."
+    },
+    "editortitle": {
+      "content": "**MVP:** Tabellarischer JSON-Editor auf macOS mit Schema-Unterstützung, NSDocument-Integration und nativer AppKit-UI."
+    }
+  }
+}

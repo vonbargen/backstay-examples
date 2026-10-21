@@ -1,0 +1,65 @@
+{
+  "$schema": "notizen.schema.json",
+  "frenchclassicalism": {
+    "title": "französischen Klassizismus",
+    "publiziert": false,
+    "likes": 0,
+    "aenderungen": 8,
+    "getauft": "2026-09-13T10:25:31.821Z",
+    "autor": "lena",
+    "franzoesischen_klassizismus": {
+      "content": "Die französische Klassik oder Hochklassik (franz. classicisme) ist eine Epoche in der europäischen Kultur. Sie ist etwa im Zeitraum von 1660 bis 1715 angesiedelt (Zeitalter Ludwigs XIV.). Die Monopolisierung von Sprache, Hofsitten und Literatur durch die französische Klassik hatte weltweiten Einfluss."
+    },
+    "periodoffrenchclassicalliterature": {
+      "content": "Zeitliche Eingrenzung\nDie Jahre von 1630 bis 1660 werden oft als Vorklassik (préclassicisme) bezeichnet. Als „Kernklassik“ der französischen Literatur gilt der Zeitraum von 1661 (Tod Mazarins, Beginn der Alleinregierung Ludwigs XIV.) bis 1685 (Edikt von Fontainebleau). Als Nachklassik (postclassicisme) wird die Epoche von 1685 bis 1715 (Tod Ludwigs XIV.) bezeichnet."
+    },
+    "franceclassicalera": {
+      "content": "Zentrale Institutionen wie die Académie française (seit 1635), die Pariser Opéra (seit 1671) und die Comédie-Française (seit 1680) wachten über die offizielle Kultur."
+    },
+    "concept": {
+      "title": "Begriff",
+      "absatz": {
+        "content": "Die französische Klassik verbindet die Machtkonzentration des Absolutismus mit antiken Vorbildern, die vielen Herrschern seit der Renaissance zur Emanzipation von kirchlichen Autoritäten dienten. Die Epoche beruft sich nicht mehr auf die Bibel, sondern auf antike Texte in zeittypischer Auslegung. Parallel dazu verläuft die wachsende Opposition des Rationalismus gegen die Scholastik in der Philosophie (zum Beispiel bei René Descartes). Dies wurde noch nicht als individualistische bürgerliche Emanzipation verstanden, sondern als Emanzipation eines geeinten Staates von der Kirche. Bürgerliche Opposition gegen die französische Klassik entwickelte sich etwa auf den Pariser Jahrmärkten.",
+        "$anchors": {
+          "content": [
+            {
+              "kind": "footnote",
+              "prefix": " individualistische bürgerliche ",
+              "exact": "Emanzipation",
+              "suffix": " verstanden, sondern als Emanzip",
+              "targets": [
+                "/notizen/empowerment"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "empowerment": {
+    "title": "Emanzipation",
+    "publiziert": false,
+    "likes": 0,
+    "aenderungen": 11,
+    "getauft": "2026-09-13T10:30:01.999Z",
+    "autor": "lena",
+    "emanzipation": {
+      "content": "Emanzipation stammt von dem lateinischen Wort emancipatio, das „Entlassung des Sohnes aus der väterlichen Gewalt“ bedeutet. Die Römer verstanden damit die Volljährigkeit eines jungen Römers.[1]"
+    },
+    "empowermentefforts": {
+      "content": "Im 17./18. Jahrhundert erfolgte eine Bedeutungsverschiebung: Aus dem Akt des Gewährens von Selbstständigkeit wurde eine Aktion gesellschaftlicher und insbesondere politischer Selbstbefreiung. Ziel emanzipatorischen Bestrebens ist ein Zugewinn an Freiheit oder Gleichheit (im Sinne von Gleichberechtigung oder Gleichstellung), meist verbunden mit Kritik an Diskriminierung oder hegemonialen z. B. paternalistischen Strukturen, oder auch die Verringerung von z. B. seelischer, ökonomischer Abhängigkeit, etwa von den Eltern."
+    },
+    "definition": {
+      "title": "Definition",
+      "absatz": {
+        "content": "Emanzipation bezeichnet die Befreiung von Menschen aus einem Zustand der Abhängigkeit. Der Prozess der Emanzipation zielt auf die Befreiung von Akteuren aus kollektiven oder institutionellen Zuschreibungen und die Herstellung rechtlicher und gesellschaftlicher Gleichstellung. Weiterhin auf die Vermeidung von Sonderbehandlungen, die ihnen aufgrund ihrer Ethnizität, ihres Geschlechts, ihrer sozialen Klassenzugehörigkeit, ihrer körperlichen oder geistigen Einschränkung, ihrer Lebensauffassung oder religiösen Ausrichtung zuteilwird. Diese Diskriminierung zeigt sich unter anderem in der eingeschränkten Teilhabe bei politisch-gesellschaftlichen Entscheidungsprozessen oder im Ausschluss von Mitwirkung in sozio-ökonomischen Zusammenhängen.[2] (z. B. Judenemanzipation – siehe unten – oder Katholikenemanzipation, Inklusion). Für den Begriff politischer Emanzipation hat sich im US-amerikanischen Sprachgebrauch auch die Bezeichnung empowerment (wörtlich „Ermächtigung“) durchgesetzt."
+      }
+    },
+    "kapitel": {
+      "title": "Wortherkunft",
+      "absatz2": {
+        "content": "Das lateinische Wort emancipatio ist eine Zusammensetzung aus drei Wörtern: e: aus, manus: Hand, capere: nehmen. Als mancipatio bezeichnete man im römischen Recht einen förmlichen Übertragungsakt, der vor allem der Veräußerung von Sklaven und anderen wertvollen Gegenständen diente. Mit einer mancipatio konnte ein pater familias aber auch seine väterliche Gewalt über einen Sohn oder eine Tochter an einen Dritten übertragen und diesem das Kind damit in Dienst geben. Demgegenüber bedeutete e-mancipatio die Entlassung „aus“ der väterlichen Gewalt in die Selbständigkeit.[3][4]"
+      }
+    }
+  }
+}

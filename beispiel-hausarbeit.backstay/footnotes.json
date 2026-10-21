@@ -1,0 +1,110 @@
+{
+  "$schema": "footnotes.schema.json",
+  "fuhrmann_dichtungstheorie_der_antike": {
+    "title": "Fuhrmann: Dichtungstheorie der Antike",
+    "source": "/literature/F1",
+    "mode": "quotation"
+  },
+  "fuhrmann_dichtungstheorie_der_antike_s_5": {
+    "title": "Fuhrmann: Dichtungstheorie der Antike, S. 54",
+    "source": "/literature/F1",
+    "page": "54",
+    "mode": "paraphrase"
+  },
+  "hose_aristoteles_poetik_einleitung_text_ue": {
+    "title": "Hose: Aristoteles, ›Poetik‹. Einleitung, Text, Übersetzung und Kommentar. Mit einem Anhang: Texte zur aristotelischen Literaturtheorie, S. 103-161",
+    "source": "/literature/hose2023",
+    "page": "103-161",
+    "mode": "paraphrase"
+  },
+  "hose_aristoteles_poetik_einleitung_text_ue_2": {
+    "title": "Hose: Aristoteles, ›Poetik‹. Einleitung, Text, Übersetzung und Kommentar. Mit einem Anhang: Texte zur aristotelischen Literaturtheorie, S. 113",
+    "source": "/literature/hose2023",
+    "page": "113",
+    "mode": "quotation"
+  },
+  "fuhrmann_dichtungstheorie_der_antike_s_8": {
+    "title": "Fuhrmann: Dichtungstheorie der Antike, S. 89",
+    "source": "/literature/F1",
+    "page": "89",
+    "mode": "paraphrase"
+  },
+  "gottsched_critische_dichtkunst_s_348": {
+    "title": "Gottsched: Critische Dichtkunst, S. 348",
+    "source": "/literature/gottsched1973",
+    "page": "348",
+    "mode": "paraphrase"
+  },
+  "lenz_anmerkungen_uebers_theater_s_20_f": {
+    "title": "Lenz: Anmerkungen übers Theater, S. 20 f",
+    "source": "/literature/lenz_anmerkungen",
+    "page": "20 f",
+    "mode": "paraphrase"
+  },
+  "lenz_anmerkungen_uebers_theater_s_43": {
+    "title": "Lenz: Anmerkungen übers Theater, S. 43",
+    "source": "/literature/lenz_anmerkungen",
+    "page": "43",
+    "mode": "quotation"
+  },
+  "lenz_anmerkungen_uebers_theater_s_29": {
+    "title": "Lenz: Anmerkungen übers Theater, S. 29",
+    "source": "/literature/lenz_anmerkungen",
+    "page": "29",
+    "mode": "paraphrase"
+  },
+  "lenz_der_hofmeister_s_5_17": {
+    "title": "Lenz: Der Hofmeister, S. 5-17",
+    "source": "/literature/lenz_hofmeister",
+    "page": "5-17",
+    "mode": "paraphrase"
+  },
+  "demuth_realitaet_als_geschichte_s_152": {
+    "title": "Demuth: Realität als Geschichte, S. 152",
+    "source": "/literature/demuth1994",
+    "page": "152",
+    "mode": "paraphrase"
+  },
+  "lenz_der_hofmeister_s_7_14": {
+    "title": "Lenz: Der Hofmeister, S. 7-14",
+    "source": "/literature/lenz_hofmeister",
+    "page": "7-14",
+    "mode": "paraphrase"
+  },
+  "durzak_lenz_der_hofmeister_s_112": {
+    "title": "Durzak: Lenz’ Der Hofmeister, S. 112",
+    "source": "/literature/durzak1994",
+    "page": "112",
+    "mode": "paraphrase"
+  },
+  "lenz_anmerkungen_uebers_theater_s_36": {
+    "title": "Lenz: Anmerkungen übers Theater, S. 36",
+    "source": "/literature/lenz_anmerkungen",
+    "page": "36",
+    "mode": "paraphrase"
+  },
+  "demuth_realitaet_als_geschichte_s_158": {
+    "title": "Demuth: Realität als Geschichte, S. 158",
+    "source": "/literature/demuth1994",
+    "page": "158",
+    "mode": "paraphrase"
+  },
+  "lenz_der_hofmeister_s_98": {
+    "title": "Lenz: Der Hofmeister, S. 98",
+    "source": "/literature/lenz_hofmeister",
+    "page": "98",
+    "mode": "paraphrase"
+  },
+  "durzak_lenz_der_hofmeister_s_116": {
+    "title": "Durzak: Lenz’ Der Hofmeister, S. 116",
+    "source": "/literature/durzak1994",
+    "page": "116",
+    "mode": "paraphrase"
+  },
+  "durzak_lenz_der_hofmeister_s_117": {
+    "title": "Durzak: Lenz’ Der Hofmeister, S. 117",
+    "source": "/literature/durzak1994",
+    "page": "117",
+    "mode": "paraphrase"
+  }
+}

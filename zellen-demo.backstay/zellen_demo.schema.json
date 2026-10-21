@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$main": true,
+  "title": "Zellen-Demo",
+  "description": "Zell-Referenzen (CellReferenz): Werte sind Datenfelder, der Text referenziert sie.",
+  "type": "object",
+  "properties": {
+    "titel": {
+      "title": "Titel",
+      "type": "string"
+    },
+    "rechnung": {
+      "title": "Rechnung",
+      "type": "string",
+      "$render": {
+        "kind": "longtext"
+      }
+    },
+    "reihen": {
+      "title": "Reihen",
+      "type": "integer"
+    },
+    "pro_reihe": {
+      "title": "Pro Reihe",
+      "type": "integer"
+    },
+    "gesamt": {
+      "title": "Gesamt",
+      "type": "integer",
+      "default": {
+        "$kind": "js",
+        "expression": "reihen * pro_reihe"
+      }
+    }
+  }
+}

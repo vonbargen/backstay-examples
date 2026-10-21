@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Literatur",
+  "$import": "backstay:literature",
+  "type": "object",
+  "properties": {
+    "F1": {
+      "$ref": "#/$defs/literatureEntry"
+    },
+    "lenz_hofmeister": {
+      "$ref": "#/$defs/literatureEntry"
+    },
+    "lenz_anmerkungen": {
+      "$ref": "#/$defs/literatureEntry"
+    },
+    "hose2023": {
+      "$ref": "#/$defs/zoteroRef"
+    },
+    "gottsched1973": {
+      "$ref": "#/$defs/literatureEntry"
+    },
+    "demuth1994": {
+      "$ref": "#/$defs/literatureEntry"
+    },
+    "durzak1994": {
+      "$ref": "#/$defs/literatureEntry"
+    }
+  },
+  "$procedures": {
+    "literaturBeteiligte": {
+      "title": "Literatur_Beteiligte",
+      "queries": [
+        "$.literature.F1.creators[*]",
+        "$.literature.lenz_hofmeister.creators[*]",
+        "$.literature.lenz_anmerkungen.creators[*]",
+        "$.literature.gottsched1973.creators[*]",
+        "$.literature.demuth1994.creators[*]",
+        "$.literature.durzak1994.creators[*]"
+      ]
+    }
+  }
+}
